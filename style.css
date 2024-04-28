@@ -1,0 +1,97 @@
+@keyframes backgroundAnimation {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0 0; }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffa96cc4;
+    background-image: url('wallpaper.png');
+    background-size: cover;
+    animation: backgroundAnimation 10s linear infinite; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    color: #000000; 
+    text-align: center;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #000000fb; 
+}
+
+.container {
+    background-color: rgba(192, 210, 208, 0.724);
+    padding: 40px;
+    border-radius: 20px; 
+    box-shadow: 0 20px 20px rgba(1, 255, 35, 0.243);
+    width: 90%;
+    max-width: 600px; 
+    text-align: center;
+    font-size: 20px; 
+    font-weight: bolder;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+
+}
+
+.heading {
+    font-size: 40px;
+    margin-bottom: 40px; 
+}
+
+.input {
+    height: 60px; 
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.819); 
+    border-radius: 30px; 
+    font-size: 18px; 
+    padding: 0 20px; 
+    margin-bottom: 20px; 
+    border-color: rgb(255, 255, 255);
+    animation: inputAnimation 1s ease infinite alternate; 
+}
+
+
+.meaning-container {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.294); 
+    border-radius: 10px; 
+}
+
+
+.input:hover {
+    background-color: rgb(211, 235, 243); 
+    box-shadow: 0 0 20px rgba(4, 230, 181, 0.74); 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+@keyframes inputAnimation {
+    from {
+        transform: translateY(-2px);
+    }
+    to {
+        transform: translateY(2px); 
+    }
+}
