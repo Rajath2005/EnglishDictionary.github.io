@@ -1,1 +1,1 @@
-# hostelmanagement.github.io
+# EnglishDictionary.github.io
